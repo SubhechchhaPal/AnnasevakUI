@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="Annasevak_ui.css"/>
+<title>Welcome to Annasevek</title>
+</head>
+
+<body>
+<div id="Sidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+<a href="#"><i class="fa fa-user-circle-o" style="font-size:24px"></i> Admin Login</a>
+<a href="#data"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Data Entry</a>
+<a href="#about"><i class="fa fa-info-circle"></i> About</a>
+<a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer; color:#BAA4DA" onclick="openNav()">&#9776;</span>
+  <div class="about">
+  <h1 id="about"><strong>Annasevak</strong>
+  <p>Food to feed</p>
+  <div class="AboutAnnasevak">
+  <p>Welcome to our next-generation vending machine service, where cutting-edge technology meets personalized nutrition! Our advanced vending machines are designed to deliver raw food options tailored to your specific dietary needs and health conditions. Here’s how it works:<br /><br />When you use our vending machine, you'll start by entering some basic information: your ID, age, height, weight, and gender. This helps us create a comprehensive profile that guides our nutritional recommendations. Next, you'll find a dropdown menu with multiple checkboxes where you can select any health conditions or diseases you may have. This could include options like diabetes, hypertension, gluten intolerance, or other dietary restrictions.<br /><br />Our intelligent system uses this information to analyze your unique profile and determine the optimal nutritional requirements for you. By understanding your health conditions and physical characteristics, our vending machine ensures that you receive raw food items that support your well-being and dietary needs.<br /><br />For example, if you have selected diabetes, our machine will prioritize foods low in sugar and high in fiber. If you have hypertension, it will recommend foods low in sodium. This personalized approach ensures that you get the right nutrients to maintain and improve your health.<br /><br />Your unique ID helps us remember your preferences and health conditions for future visits, making each interaction quicker and more personalized. All your data is securely stored and used solely to enhance your vending experience, ensuring privacy and confidentiality.<br /><br>Experience the ultimate in personalized nutrition with our innovative vending machines. Say goodbye to generic snack options and hello to a healthier, more customized approach to eating!</p>
+  </div>
+  </div>
+  <div class="datacontain">
+  <h1 id="data">Please Enter Your Data!</h1><hr />
+  <div class="datainput" style="text-align:center">
+  <form method="post" action="">
+        <input type="text" placeholder="ID(I.G.-001)" name="ID" />
+        <input type="text" placeholder="Height" name="Height" /><br />
+        <input type="text" placeholder="Weight" name="Weight" />
+        <input type="text" placeholder="Gender" name="Gender" /><BR />
+        <input type="text" placeholder="Age" name="Age" /> 
+      
+<div class="dropdown">
+        <button> Special Disease <i class="fa fa-angle-down" style="font-size:24px"></i></button>
+        <div class="dropdown-content">
+            <label><input type="checkbox" value="None">None</label>
+            <label><input type="checkbox" value="Diabetes">Diabetes</label>
+            <label><input type="checkbox" value="Thyroid">Thyroid</label>
+            <label><input type="checkbox" value="Rickets">Rickets</label>
+            <label><input type="checkbox" value="Anaemia">Anaemia</label>
+            <label><input type="checkbox" value="Triglycerides">Triglycerides</label>
+        </div>
+    </div>
+
+ <br />
+        <input type="submit" value="Submit" name="Submit" />
+   </form>
+   </div><hr />
+  </div>
+  <div class="footer">
+  <footer>
+  <h3 id="contact"></h3>
+<p>Contact us on: <strong>annasevak@gamil.com</strong><br />
+<strong> Copyright &copy; 2024 - Anurag & Subhechchha</strong>
+</footer>
+</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("Sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("Sidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
