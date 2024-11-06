@@ -95,7 +95,7 @@ body {}
 .AboutAnnasevak p{
 	font-size:25px;
 	font-family:"Baskerville Old Face";
-	text-align:justify;
+	text-align:left;
 	}
 .dropdown {
             position: relative;
